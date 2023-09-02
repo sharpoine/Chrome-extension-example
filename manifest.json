@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "FocusExt",
+    "version": "1.0",
+    "description": "Extension for more focus and productivity",
+    "content_scripts": [
+        {
+            "js": [
+                "scripts/content.js"
+            ],
+            "matches": [
+                "*://*/*"
+            ]
+        }
+    ],
+    "permissions": [
+        "storage",
+        "tabs"
+    ],
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": false
+    }
+}
